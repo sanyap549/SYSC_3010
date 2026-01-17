@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import time
 import sqlite3
 from datetime import datetime
@@ -11,7 +10,6 @@ dbconnect = sqlite3.connect("sensorDB.db")
 dbconnect.row_factory = sqlite3.Row
 cursor = dbconnect.cursor()
 
-# Create the table if it doesn't exist yet
 
 print("Starting SenseHAT data logging. Press Ctrl+C to stop.")
 
