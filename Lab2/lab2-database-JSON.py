@@ -3,7 +3,7 @@ from urllib.parse import urlencode
 import json
 import sqlite3
 
-# --- Connect to SQLite database ---
+
 dbconnect = sqlite3.connect("sensorDB.db")
 cursor = dbconnect.cursor()
 
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS Winds (
 )
 """)
 
-# --- API Setup ---
+
 apiKey = "a808bbf30202728efca23e099a4eecc7"
 city = input("Enter the name of a city whose weather you want: ")
 
@@ -37,7 +37,7 @@ data = json.loads(results)
 # Extract wind speed
 wind_speed = data.get("wind", {}).get("speed", None)
 
-# --- Compare with most recent wind speed for the same city ---
+
 cursor.execute(
     "SELECT WindSpeed FROM Winds WHERE LOWER(City)=? ORDER BY Date DESC LIMIT 1",
     (city.lower(),)
