@@ -16,18 +16,10 @@ except KeyError:
         "databaseURL": "https://sysc3010-ed257-default-rtdb.firebaseio.com/",
         "storageBucket": "sysc3010-ed257.appspot.com"
     }
-"""
-export W24_SYSC3010LAB3FIREBASECONFIG='{
-  apiKey: "AIzaSyA94C_N9CUN7grTz4VnAA7IyEQ6_Wnn8J4",
 
-  authDomain: "shared-iot-l3-g2.firebaseapp.com",
+#export W24_SYSC3010LAB3FIREBASECONFIG='{"apiKey": "AIzaSyA94C_N9CUN7grTz4VnAA7IyEQ6_Wnn8J4","authDomain": "shared-iot-l3-g2.firebaseapp.com",
+#"projectId": "shared-iot-l3-g2","storageBucket": "shared-iot-l3-g2.firebasestorage.app"}'
 
-  projectId: "shared-iot-l3-g2",
-
-  storageBucket: "shared-iot-l3-g2.firebasestorage.app"
-}'
-
-"""
 
 # Connect to Firebase
 firebase = pyrebase.initialize_app(config)
@@ -91,4 +83,5 @@ for user in username_lst:
         lastDataPoint = mySensorData_list[-i]
         print("Child Key: {}".format(lastDataPoint.key()))
         print("Child Value: {}\n".format(lastDataPoint.val()))
+
 
