@@ -17,3 +17,5 @@ For Lab 4, the following files are included in the `Lab4` directory of my GitHub
    - Picture of the physical circuit set up with the Raspberry Pi and SenseHAT.
 
 
+## Notes
+- I submitted late because one of my resistors werent working so I had to get it in the following lab session.
