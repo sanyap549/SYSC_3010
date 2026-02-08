@@ -1,11 +1,11 @@
 # Lab 5 Mini-Project Submission
 
 
-### Main Script
+## Main Script
 - `main_rpi.py`  
   The main Raspberry Pi program that runs the camera and monitoring system.
 
-### Helper Functions
+## Helper Functions
 - `helper_functions/__init__.py`  
   Initializes the helper functions package.
 - `helper_functions/camera.py`  
