@@ -4,7 +4,7 @@
 
 For Lab 4, the following files are included in the `Lab4` directory of my GitHub repository:
 
-1. ss1 and ss2`  
+1. `ss1 and ss2`  
    - Created using Fritzing to show the circuit connected to the Raspberry Pi GPIO pins.
 
 2. `traffic_light.py`  
