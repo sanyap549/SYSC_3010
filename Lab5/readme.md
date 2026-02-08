@@ -15,6 +15,11 @@
 - `helper_functions/sensehat.py`  
   Functions for interfacing with the Sense HAT (LEDs, sensors).
 
+## webstreaming.py
+- Starts a web server on the Raspberry Pi.
+- Streams live video from the Pi camera to a browser using MJPEG.
 
+### Notes
+- Ensure `data/images/` exists before running `main_rpi.py`.
 
 
